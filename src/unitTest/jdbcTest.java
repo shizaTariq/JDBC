@@ -20,7 +20,7 @@ public class jdbcTest {
 		
 		try{
 			DriverManager.registerDriver( new JdbcDriver());
-			connection = DriverManager.getConnection("jdbc:odbc:xmp","root","");
+			connection = DriverManager.getConnection("jdbc:odbc:mysql","root","");
 			statement = connection.createStatement();
 
 			String sql = "SELECT * FROM Persons";
