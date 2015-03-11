@@ -23,7 +23,7 @@ public class unitTesting {
 		try {
 			driver = new JdbcDriver();
 			DriverManager.registerDriver(driver);
-			conn = DriverManager.getConnection("jdbc:odbc:xmp","root","");
+			conn = DriverManager.getConnection("jdbc:odbc:mysql","root","");
 			st = conn.createStatement();
 			rs = st.executeQuery("SELECT * FROM PERSONS");
 			while(rs.next()){
